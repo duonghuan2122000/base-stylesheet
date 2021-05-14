@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Component</title>
+    <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/solid.min.css">
+
+    <link rel="stylesheet" href="/dist/components/input.css">
+</head>
+<body>
+    <!-- input cơ bản -->
+    <input type="text" class="input" placeholder="Nhập từ khóa tìm kiếm">
+
+    <div class="form-control">
+        <label class="label">Label</label>
+        <input type="text" class="input">
+    </div>
+
+    <!-- input có icon -->
+    <!-- 
+        input có icon cần đặt icon trước thẻ input dù input đó đứng ở bên trái hay bên phải
+     -->
+    <div class="form-control has-icon">
+        <input type="text" class="input" placeholder="Nhập từ khóa tìm kiếm">
+        <span class="icon-right">
+            <i class="fas fa-search"></i>
+        </span>
+    </div>
+
+    <div class="form-control has-icon">
+        <span class="icon-left">
+            <i class="fas fa-search"></i>
+        </span>
+        <input type="text" class="input" placeholder="Nhập từ khóa tìm kiếm">
+    </div>
+
+</body>
+</html>

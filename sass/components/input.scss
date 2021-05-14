@@ -1,0 +1,68 @@
+@import '../common/common';
+
+$input-height: 40px;
+$input-border-color: #ccc;
+$input-radius: 4px;
+$input-padding-horizontal: 16px;
+$input-label-margin: 4px;
+$input-border-color___focus: green;
+
+
+// TODO: Option. style cho placeholder input
+@mixin input-placeholder {
+    font-style: italic;
+}
+
+.input {
+    height: $input-height;
+    outline: none;
+    border: 1px solid $input-border-color;
+    border-radius: $input-radius;
+    padding-left: $input-padding-horizontal;
+    padding-right: $input-padding-horizontal;
+    width: 100%;
+
+    // style cho hover và focus input
+    &:hover, &:focus {
+        border-color: $input-border-color___focus;
+    }
+
+    // style cho placeholder
+    &::placeholder {
+        @include input-placeholder;
+    }
+
+    &:-ms-input-placeholder {
+        @include input-placeholder;
+    }
+}
+
+// input container.
+.form-control {
+    position: relative;
+    line-height: $input-height;
+
+    .label {
+        margin: $input-label-margin auto;
+    }
+
+    // style cho icon left.
+    .icon-left {
+        position: absolute;
+        inset: 0 auto auto 16px;
+
+        & + .input {
+            padding-left: 40px;
+        }
+    }
+
+    // style cho icon right.
+    .icon-right {
+        position: absolute;
+        inset: 0 16px auto auto;
+
+        & + .input {
+            padding-right: 40px;
+        }
+    }
+}
