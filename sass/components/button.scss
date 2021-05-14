@@ -1,0 +1,48 @@
+@import '../common/common';
+
+$btn-height: 40px;
+$btn-padding-horizontal: 24px;
+$btn-radius: 4px;
+$btn-border-color: #ccc;
+
+// color
+$btn-bg-color-primary: green;
+$btn-color-primary: #fff;
+
+$btn-bg-color-primary___hover: rgb(2, 107, 2);
+
+$btn-margin-icon-text: 8px;
+
+
+.btn {
+    display: inline-block;
+    height: $btn-height;
+    line-height: $btn-height;
+    padding-left: $btn-padding-horizontal;   
+    padding-right: $btn-padding-horizontal;
+    border: 1px solid $btn-border-color;
+    border-radius: $btn-radius;
+    outline: none;
+    cursor: pointer;
+
+    &.btn-primary {
+        background-color: $btn-bg-color-primary;
+        color: $btn-color-primary;
+        font-weight: bold;
+        &:hover {
+            background-color: $btn-bg-color-primary___hover;
+        }
+    }
+
+    // icon button
+    &.has-icon {
+        padding-left: 16px;
+        padding-right: 16px;
+        .icon-left {
+            margin-right: $btn-margin-icon-text;
+        }
+        .icon-right {
+            margin-left: $btn-margin-icon-text;
+        }
+    }
+}

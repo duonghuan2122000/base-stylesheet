@@ -1,0 +1,28 @@
+{
+  "name": "base-stylesheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch sass:dist",
+    "watch-html": "gulp watch",
+    "dev": "concurrently \"npm run watch-sass\" \"npm run watch-html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duonghuan2122000/base-stylesheet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duonghuan2122000/base-stylesheet/issues"
+  },
+  "homepage": "https://github.com/duonghuan2122000/base-stylesheet#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "concurrently": "^6.1.0",
+    "gulp": "^4.0.2",
+    "sass": "^1.32.13"
+  }
+}
